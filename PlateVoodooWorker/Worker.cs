@@ -167,7 +167,7 @@ public class Worker
 
                 using (PlateVoodooContext plateRecognizerContext = new PlateVoodooContext())
                 {
-                    foreach (var item in plateRecognizerContext.Vehicles.Where(x => x.State == 1 && x.OperationId == operationId).Take(1000).ToList())
+                    foreach (var item in plateRecognizerContext.Vehicles.Where(x => x.State == 1 && x.OperationId == operationId).ToList())
                     {
                         try
                         {

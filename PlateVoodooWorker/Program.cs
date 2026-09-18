@@ -7,7 +7,7 @@ namespace PlateVoodooWorker
             Worker worker = new Worker();
 
             int operationId = 2; // OperationId
-            int caseState = 2;   // Excel okuma ve DB yazma (Case 1) - OSR analiz ve API çağrısı (Case 2) 
+            int caseState = 1;   // Excel okuma ve DB yazma (Case 1) - OSR analiz ve API çağrısı (Case 2) 
 
             Console.WriteLine("Worker başlatılıyor...");
             worker.ExecuteProcess(operationId, caseState);
